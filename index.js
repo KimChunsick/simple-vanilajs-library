@@ -1,0 +1,5 @@
+const DashBoard = require('./src/components/DashBoard')
+const app = document.getElementById('app')
+const dashboard = new DashBoard()
+app.insertAdjacentHTML('afterbegin', dashboard.render())
+dashboard.mount()
